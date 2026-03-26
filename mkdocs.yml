@@ -3,7 +3,6 @@ site_author: Júlio
 
 nav:
   - Home: index.md
-  - "Critérios de Avaliação de Arquitetura": CriteriosDeAvaliacaoDeArquitetura.md
 
 markdown_extensions:
   - abbr
