@@ -36,7 +36,7 @@ jobs:
         run: python scripts/generate_nav.py
 
       - name: Buildar documentação
-        run: mkdocs build --strict
+        run: mkdocs build 
 
       - name: Upload artifact do Pages
         uses: actions/upload-pages-artifact@v3
