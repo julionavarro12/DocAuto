@@ -2,7 +2,6 @@ site_name: Teste
 site_author: Júlio
 
 nav:
-  - Home: index.md
 
 markdown_extensions:
   - abbr
