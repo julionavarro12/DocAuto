@@ -210,6 +210,4 @@ docs/img/
 
 ---
 
-## 📄 Licença
 
-Uso interno / corporativo — VMI Security © 2026
