@@ -1,5 +1,6 @@
 site_name: Teste
 site_author: Júlio
+site_url: https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/
 
 nav:
 
@@ -94,5 +95,3 @@ extra:
       link: https://www.linkedin.com/company/vmi-security/mycompany/
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/user/vmiseguranca
-
-copyright: Copyright © 2026 VMI Security
