@@ -85,8 +85,8 @@ theme:
       example: octicons/beaker-16
       quote: octicons/quote-16
 
-#extra_css:
- # - stylesheets/extra.css
+extra_css:
+- stylesheets/extra.css
 
 extra:
   social:
