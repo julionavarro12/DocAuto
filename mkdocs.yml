@@ -3,12 +3,8 @@ site_author: Júlio
 
 nav:
   - Home: index.md
-  - "Actions & Command Pattern": Action&CommandPattern.md
   - "Critérios de Avaliação de Arquitetura": CriteriosDeAvaliacaoDeArquitetura.md
-  - "Event Bus (Pub/Sub)": EventBus.md
 
-# ------------------------------------------------------------
-# Extensions
 markdown_extensions:
   - abbr
   - admonition

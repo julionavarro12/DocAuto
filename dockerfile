@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install mkdocs
-
-CMD ["sh", "-c", "python scripts/update_nav.py && mkdocs build"]
+RUN pip install --default-timeout=100 -r requirements.txt
+    
+CMD ["sh", "-c", "python scripts/generate_nav.py && mkdocs serve -a 0.0.0.0:8000"]

@@ -1,0 +1,39 @@
+name: Docs Pipeline
+
+on:
+  push:
+  pull_request:
+
+concurrency:
+  group: docs-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Instalar dependências
+        run: |
+          python -m pip install --upgrade pip
+          pip install --default-timeout=100 -r requirements.txt
+
+      - name: Gerar nav automaticamente
+        run: python scripts/generate_nav.py
+
+      - name: Buildar documentação
+        run: mkdocs build --strict
+
+      - name: Salvar site gerado
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: site
